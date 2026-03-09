@@ -68,7 +68,7 @@ public class MainProgram
             {    
                 if(a==4 && bval[i][j]==bval[i][j+1] && bval[i][j]!=1)
                 {
-                    bval[i][j]*=2;      bval[i][j+1]=1; score += bval[i][j]; r++;
+                    bval[i][j]*=2;      bval[i][j+1]=1; score+=bval[i][j]; r++;
                 }
                 if(a==6 && bval[i][3-j]==bval[i][2-j] && bval[i][3-j]!=1)
                 {
@@ -128,7 +128,7 @@ public class MainProgram
                 }
                 if(a==2 && bval[3-i][j]==bval[2-i][j] &&  bval[2-i][j]!=1)
                 {
-                    bval[3-i][j]*=2;   bval[2-i][j]=1; score+= bval[i][3-j]; r++;
+                    bval[3-i][j]*=2;   bval[2-i][j]=1; score+= bval[3-i][j]; r++;
                 }
             }
         return r;
@@ -216,5 +216,3 @@ public class MainProgram
         }
     }
 }
-
-
